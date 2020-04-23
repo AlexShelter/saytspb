@@ -304,6 +304,13 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 *, *:before, *:after {
   box-sizing: border-box;
   outline: none; }
