@@ -311,6 +311,26 @@ template {
   font-style: normal;
   font-display: swap; }
 
+.button {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 22px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 1.1428rem;
+  font-weight: 500;
+  line-height: 0.7857rem;
+  color: #ffffff;
+  letter-spacing: 0px; }
+  .button--primary {
+    background-color: #ff5a3c; }
+
+.container {
+  width: 85%;
+  max-width: 1170px;
+  margin: auto; }
+
 *, *:before, *:after {
   box-sizing: border-box;
   outline: none; }
@@ -318,5 +338,115 @@ template {
 html {
   font-size: 14px; }
 
-h1 {
-  text-align: center; }
+.header {
+  padding-top: 2.285rem;
+  padding-bottom: 25rem;
+  background: #ffffff url("../img/header-bg.jpg") no-repeat left top;
+  height: auto; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #38393b;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 1.857rem;
+    font-weight: 700;
+    line-height: 1.357rem;
+    text-transform: uppercase;
+    letter-spacing: 1.02px; }
+    .logo-link__text {
+      margin-left: 1rem;
+      letter-spacing: 0.2px; }
+
+.nav {
+  display: flex;
+  align-items: center; }
+  .nav__item {
+    text-decoration: none;
+    color: #38393b;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 1.142857rem;
+    font-weight: 300;
+    line-height: 37.33px;
+    margin-right: 1.8rem; }
+
+.contacts {
+  display: flex;
+  align-items: center; }
+  .contacts__phone {
+    color: #38393b;
+    text-decoration: none;
+    color: #38393b;
+    font-family: Ubuntu;
+    font-size: 1.2857rem;
+    font-weight: 500;
+    line-height: 37.33px;
+    margin-right: 3.185rem; }
+  .contacts__button {
+    padding: 15px 30px 17px 32px; }
+
+.hero {
+  padding-top: 18.7rem;
+  max-width: 100%; }
+  .hero-text {
+    max-width: 44.2857rem; }
+  .hero__title {
+    color: #38393b;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 4.42857rem;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -3.1px;
+    margin-bottom: 2.75rem;
+    margin-left: -0.5rem; }
+    .hero__title--primary {
+      letter-spacing: -2.8px;
+      color: #ff5a3c; }
+  .hero__discription {
+    max-width: 41.2rem;
+    color: #38393b;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 1.4285rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+    margin-bottom: 2.75rem; }
+  .hero__button {
+    padding: 17px 42px 20px 38px; }
+
+@media screen and (max-width: 1340px) {
+  html {
+    font-size: 12px; }
+  .header {
+    background-position: center top;
+    height: auto; } }
+
+@media screen and (max-width: 992px) {
+  .hero {
+    padding-top: 9.7rem; }
+  .nav {
+    display: none; } }
+
+@media screen and (max-width: 760px) {
+  .hero__title {
+    font-size: 2.42857rem;
+    line-height: 36px; }
+  .hero-text {
+    max-width: 24.2857rem; }
+  .contacts__button {
+    display: none; }
+  .contacts__phone {
+    margin-right: 0; } }
+
+@media screen and (max-width: 375px) {
+  .logo img {
+    display: none; } }
