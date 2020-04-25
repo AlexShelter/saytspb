@@ -339,9 +339,9 @@ html {
   font-size: 14px; }
 
 .header {
-  padding-top: 2.285rem;
+  padding-top: 1.295rem;
   padding-bottom: 25rem;
-  background: #ffffff url("../img/header-bg.jpg") no-repeat left top;
+  background: #ffffff url(../img/header-bg.jpg) no-repeat -12px 0px;
   height: auto; }
 
 .menu {
@@ -370,8 +370,10 @@ html {
 
 .nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-left: 13rem; }
   .nav__item {
+    position: relative;
     text-decoration: none;
     color: #38393b;
     font-family: 'Ubuntu' , sans-serif;
@@ -379,6 +381,15 @@ html {
     font-weight: 300;
     line-height: 37.33px;
     margin-right: 1.8rem; }
+    .nav__item:hover::after {
+      content: '';
+      display: block;
+      width: 63%;
+      height: 2px;
+      background-color: #ff5a3c;
+      position: absolute;
+      margin: 0 19.1%;
+      bottom: 0.1rem; }
 
 .contacts {
   display: flex;
@@ -423,17 +434,46 @@ html {
   .hero__button {
     padding: 17px 42px 20px 38px; }
 
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 3.65rem;
+  height: 9rem;
+  bottom: 1.3rem; }
+  .social::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 620px;
+    border-radius: 2px;
+    background-color: #ff5a3c;
+    position: absolute;
+    top: -46.9rem;
+    left: 0.8rem; }
+
+.video-info {
+  background: #ffffff url("../img/video-bg.jpg") no-repeat center/cover;
+  height: 633px; }
+
 @media screen and (max-width: 1340px) {
   html {
     font-size: 12px; }
   .header {
     background-position: center top;
-    height: auto; } }
+    height: auto; }
+  .nav {
+    margin-left: 0; }
+  .social::before {
+    top: -54.9rem; } }
 
 @media screen and (max-width: 992px) {
   .hero {
     padding-top: 9.7rem; }
   .nav {
+    display: none; }
+  .social {
     display: none; } }
 
 @media screen and (max-width: 760px) {

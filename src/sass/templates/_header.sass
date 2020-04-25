@@ -1,8 +1,8 @@
 .header
-  padding-top: 2.285rem
-  padding-bottom: 25rem
-  background: $light url('../img/header-bg.jpg') no-repeat left top
-  height: auto
+    padding-top: 1.295rem
+    padding-bottom: 25rem
+    background: #ffffff url(../img/header-bg.jpg) no-repeat -12px 0px
+    height: auto
 .menu
   display: flex
   align-items: center
@@ -28,8 +28,9 @@
 .nav
   display: flex
   align-items: center
-  // margin-left: 13rem
+  margin-left: 13rem
   &__item
+    position: relative
     text-decoration: none
     color: $dark
     font-family: 'Ubuntu' , sans-serif
@@ -37,6 +38,16 @@
     font-weight: 300
     line-height: 37.33px
     margin-right: 1.8rem
+    &:hover      
+      &::after
+        content: ''
+        display: block
+        width: 63%
+        height: 2px
+        background-color: #ff5a3c
+        position: absolute
+        margin: 0 19.1%
+        bottom: 0.1rem
 .contacts
   display: flex
   align-items: center
@@ -80,5 +91,23 @@
   &__button
     // margin-left: 0.5rem
     padding: 17px 42px 20px 38px
-
+.social
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  position: absolute
+  left: 3.65rem
+  height: 9rem
+  bottom: 1.3rem
+  &::before
+    content: ''
+    display: block
+    width: 4px
+    height: 620px
+    border-radius: 2px
+    background-color: $primary
+    position: absolute
+    top: -46.9rem
+    left: 0.8rem
+   
 
