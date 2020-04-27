@@ -1,0 +1,101 @@
+.footer-main
+  background: $light url('../img/bg-footer-main.jpg') no-repeat
+  background-position: 785px -144px
+  &-wrap
+    display: flex
+    justify-content: flex-start
+  &-question
+    max-width: 475px
+    width: 100%
+    padding-top: 3.5rem
+    margin-right: 2.6rem
+    &__title
+      font-size: 36px
+      font-weight: 500
+      line-height: 44px
+      margin-bottom: 0.4rem
+    &__email
+      position: relative
+      color: $primary
+      text-decoration: none
+      &::after
+        content: ''
+        width: 105px
+        height: 1px
+        background-color: $primary
+        position: absolute
+        top: 43px
+        right: -4px
+    &-data
+      display: flex
+      &-address
+        max-width: 230px
+        padding-left: 0.1rem
+        &__title
+          font-size: 24px
+          font-weight: 500
+          line-height: 37.33px
+          margin-bottom: 0.5rem
+        &-text
+          font-size: 18px
+          font-weight: 300
+          line-height: 30.33px
+          margin-top: 0
+          &__string
+            display: block
+      &-timesheet
+        font-size: 18px
+        font-weight: 300
+        padding-left: 2.4rem
+        padding-top: 2.9rem
+        &-subtitle
+          display: block
+          font-size: 18px
+          font-weight: 500
+          line-height: 22px
+        .work-day
+          margin-bottom: 1.7rem
+        .holiday
+          margin-bottom: 1.7rem
+  &-form
+    width: 100%
+    padding-top: 7.8rem
+    padding-left: 4.4rem
+    padding-bottom: 7.1rem
+  &__input-group
+    display: flex
+    flex-direction: column
+    margin-bottom: 1.2rem
+  .form
+    margin-bottom: 2.6rem
+    &__label
+      position: relative
+      text-transform: uppercase
+      font-size: 1.2857rem
+      font-weight: 300
+      line-height: 18.72px
+      color: #faf6f5
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        bottom: -33px
+        background-color: #939497
+        height: 1px
+        width: 548px
+    &__input
+      max-width: 548px
+      border: none
+      color: #1e1e1e
+      font-family: Ubuntu
+      font-size: 1.2857rem
+      font-weight: 300
+      line-height: 35px
+      color: #1e1e1e
+      background-color: transparent
+      &::placeholder
+        color: #1e1e1e
+  &__button
+    padding: 19px 68px 20px 68px
+    margin-left: -0.2rem

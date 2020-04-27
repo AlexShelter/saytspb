@@ -1,0 +1,74 @@
+.service
+  background: url('../img/bg-service.jpg') no-repeat
+  background-position: -167px 130px
+  &__title
+    text-align: center
+    font-size: 3rem
+    font-weight: 700
+    line-height: 37.33px
+    margin-bottom: 1.8rem
+  &__discription
+    max-width: 58.9285rem
+    margin: auto
+    text-align: center
+    font-size: 1.14285rem
+    font-weight: 400
+    line-height: 22px
+    transform: translate(-7px, 2px)
+    margin-bottom: 4.1rem
+  &-cards
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    // transform: translate(-7px, 0px)
+    padding-bottom: 14rem
+  &-card
+    width: 355px
+    background-color: $light
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    text-align: left
+    padding-top: 3.4rem
+    padding-bottom: 3rem
+    padding-left: 2.1rem
+    padding-right: 1.1rem
+    margin-bottom: 2.6rem
+    margin-right: 3.7rem
+    box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+    border: 1px solid #c9c8c8
+    border-radius: 5px
+    position: relative
+    &:hover
+      border: 1px solid $light
+      &::after
+        content: ''
+        height: 5px
+        width: 100%
+        background-color: $primary
+        border-radius: 0 0 5px 5px
+        position: absolute
+        bottom: 0
+        left: 0
+    &:nth-child(3)
+      margin-right: 0
+      padding-left: 2rem
+      .card
+        &__title
+          margin-bottom: 1.85rem
+    &:last-child
+      .card
+        &__title
+          margin-top: 0.25rem
+          margin-bottom: 1.75rem      
+  .card
+    &__title
+      font-size: 26px
+      font-weight: 500
+      line-height: 37.33px
+      margin-top: 1.15rem
+      margin-bottom: 1.25rem
+    &__text
+      font-size: 16px
+      font-weight: 300
+      line-height: 25.33px
